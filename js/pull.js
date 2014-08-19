@@ -15,7 +15,7 @@ function generateLStopLink(lstop){
               + lstop.stop_name
               + '\',\''
               + lstop.station_descriptive_name +'\')">'
-              + lstop.stop_name
+              + lstop.cta_stop_name
               + '</a></li>';
 }
 
