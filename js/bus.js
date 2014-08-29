@@ -1,4 +1,4 @@
-$.getJSON('http://data.cityofchicago.org/resource/5cq6-qygt.json', function(busstops) {
+$.getJSON('js/busstops.json', function(busstops) {
     $('#busstoplist').empty();
     
     $.each(busstops, function(i, busstop) {
@@ -12,10 +12,10 @@ function generateLStopLink(busstop){
   
     return '<li><a href="javascript:void(0)'
               + '"onclick="goToStopDetailPage(\''
-              + busstop.cta_stop_name
+              + busstop.stop_name
               + '\',\''
-              + busstop.routes +'\')">'
-              + busstop.cta_stop_name
+              + busstop.stop_desc +'\')">'
+              + busstop.stop_name
               + '</a></li>';
 }
 
